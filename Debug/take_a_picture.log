@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(46,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'obj' 왼쪽은 무시됩니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(146,1): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(174,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'Hint' 왼쪽은 무시됩니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(208,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(738,40): warning C4244: '인수': 'double'에서 'GLsizei'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1201,15): warning C4101: 'sizeY' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1201,22): warning C4101: 'sizeZ' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1201,8): warning C4101: 'sizeX' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1199,8): warning C4101: 'scaleAll' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1339,20): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1354,21): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1364,22): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1365,17): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+  take_a_picture.vcxproj -> C:\Users\Owner\Desktop\computer_graphics_term_project\Debug\take_a_picture.exe
