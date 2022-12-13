@@ -1,20 +1,20 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: 중간 디렉터리(Release\)에 다른 프로젝트(Cppfinal.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
   main.cpp
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(47,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'obj' 왼쪽은 무시됩니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(163,1): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(181,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'Hint' 왼쪽은 무시됩니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(215,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(513,40): warning C4244: '인수': 'double'에서 'GLsizei'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(590,41): warning C4244: '인수': 'double'에서 'GLsizei'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1317,15): warning C4101: 'sizeY' :참조되지 않은 지역 변수입니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1317,22): warning C4101: 'sizeZ' :참조되지 않은 지역 변수입니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1317,8): warning C4101: 'sizeX' :참조되지 않은 지역 변수입니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1315,8): warning C4101: 'scaleAll' :참조되지 않은 지역 변수입니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1492,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Owner\Desktop\computer_graphics_term_project\take_a_picture\main.cpp(1493,17): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(47,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'obj' 왼쪽은 무시됩니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(163,1): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(181,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'Hint' 왼쪽은 무시됩니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(215,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(513,40): warning C4244: '인수': 'double'에서 'GLsizei'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(590,41): warning C4244: '인수': 'double'에서 'GLsizei'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(1317,15): warning C4101: 'sizeY' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(1317,22): warning C4101: 'sizeZ' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(1317,8): warning C4101: 'sizeX' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(1315,8): warning C4101: 'scaleAll' :참조되지 않은 지역 변수입니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(1492,22): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Owner\Desktop\CG_P\CG\main.cpp(1493,17): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다.
-  1 of 467 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    9 functions had inline decision re-evaluated but remain unchanged
+  459 of 467 functions (98.3%) were compiled, the rest were copied from previous compilation.
+    39 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
-  take_a_picture.vcxproj -> C:\Users\Owner\Desktop\computer_graphics_term_project\Release\take_a_picture.exe
+  take_a_picture.vcxproj -> C:\Users\Owner\Desktop\CG_P\CG\Release\take_a_picture.exe
