@@ -84,6 +84,7 @@ bool isstart = false;
 bool line = false;
 bool isreset = false;
 bool timerend = true;
+
 // 갈색 곰 움직이게 해볼게요
 static bool b_bear_select = false;
 static bool b_bear_location = false;
@@ -95,11 +96,17 @@ glm::vec3 ray_nds = glm::vec3(x, y, z);
 static float x_window, y_window;
 static float x_view, y_view;
 static double wx, wz, wy;
+GLdouble projection[16];
+GLdouble modelView[16];
+GLint viewPort[4];
+GLfloat zCursor, winX, winY;
+
 
 //함수=====================================
 void playscene(float cx, float cy, float cz, float dx, float dy, float dz,bool board);
 void selectobj();
 void hinttimer();
+
 //bool=====================================
 bool start = false;
 bool barsys = false;
@@ -196,10 +203,10 @@ Element bar;
 
 struct Exboard
 {
-	int check[5][5];
-	bool ischeck[5][5];
-	int kindof[5];
-	bool isselect[5][5];
+	int check[4][4];
+	bool ischeck[4][4];
+	int kindof[4];
+	bool isselect[4][4];
 };
 Exboard ex;
 
@@ -219,12 +226,12 @@ void main(int argc, char** argv) //--- 윈도우 출력하고 콜백함수 설정
 	timerui[2] = "num2ui.png";
 	timerui[1] = "num1ui.png";
 	timerui[0] = "blank1.png";
-	height = 600;
-	width = 1200;
+	height = 800;
+	width = 1400;
 	bar.scalex = 2.5;
 	glutInit(&argc, argv); // glut 초기화
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); // 디스플레이 모드 설정
-	glutInitWindowPosition(100, 100); // 윈도우의 위치 지정
+	glutInitWindowPosition(100, 0); // 윈도우의 위치 지정
 	glutInitWindowSize(width, height); // 윈도우의 크기 지정
 	glutCreateWindow("take a picture!");
 	glewExperimental = GL_TRUE;
@@ -694,12 +701,12 @@ void playscene(float cx, float cy  , float cz , float dx , float dy,float dz,boo
 		glUseProgram(shaderProgram);
 		if(board){
 		// 플레이 보드판
-		for (int i = 0; i < 5; ++i) {
-			for (int j = 0; j < 5; ++j) {
+		for (int i = 0; i < 4; ++i) {
+			for (int j = 0; j < 4; ++j) {
 
 				glm::mat4 TR5 = glm::mat4(1.0f);
 				TR5 = glm::rotate(TR5, glm::radians(20.0f), glm::vec3(0.0, 1.0, 0.0));
-				TR5 = glm::translate(TR5, glm::vec3(4.0f, 0.0f, 2.2f));
+				TR5 = glm::translate(TR5, glm::vec3(3.0f, 0.0f, 1.5f));
 				TR5 = glm::translate(TR5, glm::vec3(-0.6 * j, 0.0, -0.6 * i));
 				TR5 = glm::scale(TR5, glm::vec3(3.0, 0.1, 3.0));
 				unsigned int tr5 = glGetUniformLocation(shaderProgram, "modelTransform");
@@ -1205,14 +1212,10 @@ void InitTexture(const char* filename ,unsigned int texture)
 
 void unProject(int xCursor, int yCursor)
 {
-	GLdouble projection[16];
-	GLdouble modelView[16];
-	GLint viewPort[4];
 	glGetDoublev(GL_PROJECTION_MATRIX, projection);
 	glGetDoublev(GL_MODELVIEW_MATRIX, modelView);
 	glGetIntegerv(GL_VIEWPORT, viewPort);
 
-	GLfloat zCursor, winX, winY;
 	winX = (float)xCursor;
 	winY = (float)viewPort[3] - (float)yCursor;
 	glReadPixels((int)winX, (int)winY, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &zCursor);
@@ -1232,8 +1235,8 @@ GLvoid Mouse(int button, int state, int mx, int my)
 {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
 		unProject(mx, my);
-		if (0.0466667 < wx && wx <0.531667 && -1.24>wy && wy>-1.72667) {
-			cout << "start";
+		if (-0.03 < wx && wx <0.48 && -0.44>wy && wy>-1.15) {
+			cout << "start" << endl;;
 			start = true;
 			
 		}
